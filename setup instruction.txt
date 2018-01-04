@@ -1,0 +1,14 @@
+1- activate the virtual enviroment "env" root folder it has all the requirment
+
+2- create new database blog and add your user name and password in the settings file
+
+3- run migration using "python manage.py migrate"
+
+4- create superuser to access the admin dashboard
+
+5- run the server using "python manage.py runserver"
+
+6- in the admin dashboard create new application
+
+
+ 

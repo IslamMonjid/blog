@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>One Mile Circle</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/static/css/custom.css" rel="stylesheet" />
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700i,800" rel="stylesheet">
+    <script src="/static/js/jquery-3.1.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+   
+    <div class="content container">
+<div class="col-md-6 col-md-offset-3  login-box  reg">
+    <a class="login-logo">
+            <img  src="/static/img/logob.png" title="One Mile Circle" alt="One Mile Circle" />
+
+        </a>
+    <div class="white-box">
+        <h3>Basic info</h3>
+        <div class="form-group">
+            <label> Name</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="eg. johen smith "/>
+    
+</div>
+                <div class="form-group">
+            <label> Email</label>
+    <input type="email" class="form-control" id="Email1" placeholder="eg. johen_smith@mail.com "/>
+    
+</div>
+     <h3>Account info</h3>
+                <div class="form-group">
+            <label> Username </label>
+    <input type="email" class="form-control" id="Email2" placeholder="eg. johen_smith "/>
+    
+</div>
+                <div class="form-group">
+            <label> Password</label>
+    <input type="password" class="form-control" id="Email3" placeholder="Must have at least 6 characters "/>
+    
+</div>
+                <div class="form-group">
+            <label> Confirm Password</label>
+    <input type="email" class="form-control" id="Email4" placeholder="Rewrite your passowrd here "/>
+    
+</div>
+ 
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+     
+        <div class="g-recaptcha" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;" data-sitekey="6LejRRMUAAAAAB0pabZSjrvpTUUoeMJNF8MV_rzz"></div>
+ 
+
+
+  <button type="submit" class="btn login btn-default">Signup</button>
+    
+   <form method="post" action=".">
+  {% csrf_token %}
+  {{ form.as_p }}
+
+  <input type="submit" value="Submit" />
+</form> 
+
+</div>
+    
+</div>
+
+
+
+
+    </div>
+
+
+
+    <style>
+        body, .content {
+        padding:0px;
+        }
+    </style>
+
+
+    <footer>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

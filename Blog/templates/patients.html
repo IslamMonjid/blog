@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block description %}This page is an awesome home page.{% endblock %}
+
+
+{% block content %}
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        <h1>{{ some_dynamic_value }}</h1>
+
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+<div class="container">
+  
+
+{% for patient in patients%}
+ <div class="row">
+        <div class="col-md-4">
+
+ <a href ="{{patient.url}}"> {{patient}} </a>
+</div>
+<div>
+ {% endfor %}
+            
+        </div>
+
+    </div>
+
+    <hr>
+</div> <!-- /container -->
+{% endblock %}
